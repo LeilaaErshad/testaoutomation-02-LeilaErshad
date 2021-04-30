@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-04-30T15:36:28.537Z",
+    "end": "2021-04-30T15:36:34.939Z",
+    "duration": 6402,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f44fd421-b035-457c-bdbc-3549677b7208",
+      "title": "",
+      "fullFile": "cypress/integration/hello-percy.spec.js",
+      "file": "cypress/integration/hello-percy.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d9a9882d-9768-40d9-8c57-f3816b5f165b",
+          "title": "First exempele",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test case 1",
+              "fullTitle": "First exempele Test case 1",
+              "timedOut": null,
+              "duration": 6381,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//visit home page:\ncy.visit('http://localhost:3000/login'); //Den hämtar site title:\ncy.title().should('eq', 'Testers Hotel');\ncy.contains('Login'); //-->> we are at index (login) page!!\ncy.log('At login page!');\ncy.percySnapshot('index-page');\ncy.get(':nth-child(1) > input').type('tester02');\ncy.get(':nth-child(2) > input').type('sppm7qncqmVft5uECkwjLcLdEJGzM3Cw');\ncy.get('.btn').click();\ncy.contains('Welcome');\ncy.wait(3000); //-->> we are at dashboard page!!\ncy.log('At dashboard page!');\ncy.percySnapshot('dashboard-page');",
+              "err": {},
+              "uuid": "8daf89d4-db5b-498e-a3a2-416fbc832112",
+              "parentUUID": "d9a9882d-9768-40d9-8c57-f3816b5f165b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8daf89d4-db5b-498e-a3a2-416fbc832112"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6381,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-04-30T15:36:28.537Z",
+    "end": "2021-04-30T16:11:49.309Z",
+    "duration": 24453,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "df2867f6-04ea-4958-962c-0cfc53af1129",
+      "title": "",
+      "fullFile": "cypress/integration/hello-word.spect.js",
+      "file": "cypress/integration/hello-word.spect.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "26731b86-384a-4ce7-9e36-a5101d3ad468",
+          "title": "First exempele",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test case 1",
+              "fullTitle": "First exempele Test case 1",
+              "timedOut": null,
+              "duration": 2763,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//visit home page:\ncy.visit('http://localhost:3000/login'); //Den hämtar site title:\ncy.title().should('eq', 'Testers Hotel');\ncy.contains('Login');\ncy.log('Asserted that the login string/label exists on this specific page');\ncy.get(':nth-child(1) > input').type('tester01');\ncy.get(':nth-child(2) > input').type('GteteqbQQgSr88SwNExUQv2ydb7xuf8c');\ncy.get('.btn').click();\ncy.get('.blocks > :nth-child(1) > div').should('contain', 'Number:');\ncy.get('.user > .btn').click();\ncy.contains('Login');\ncy.get('.btn');",
+              "err": {},
+              "uuid": "58a9f114-edb8-4de2-bb69-86da70b632e3",
+              "parentUUID": "26731b86-384a-4ce7-9e36-a5101d3ad468",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "58a9f114-edb8-4de2-bb69-86da70b632e3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2763,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "fee24234-4886-48f4-a396-81512b76dcbd",
+      "title": "",
+      "fullFile": "cypress/integration/page-objects.spec.js",
+      "file": "cypress/integration/page-objects.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1a0a58b9-0613-45b4-badf-2eb9f8dde93e",
+          "title": "Testsuite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login and logout",
+              "fullTitle": "Testsuite Login and logout",
+              "timedOut": null,
+              "duration": 2930,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//    loginPage.loginUser(\"tester01\", \"GteteqbQQgSr88SwNExUQv2ydb7xuf8c\", \"Tester Hotel Overview\")\ncy.log('at dashboard page!');\ncy.log('logout!');\ncy.percySnapshot('logout');",
+              "err": {},
+              "uuid": "2607c05e-5b88-4d06-b1c3-1847a49a60fe",
+              "parentUUID": "1a0a58b9-0613-45b4-badf-2eb9f8dde93e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Creat client and verify",
+              "fullTitle": "Testsuite Creat client and verify",
+              "timedOut": null,
+              "duration": 4414,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexPage.viewClients(\"Clients\");\ncy.log('Client page!');\ncy.percySnapshot('Before client');\nclientsPage.viewClientNew(\"New Client\");\nclientNewPage.createClient(randomName, randomMail, randomPhone, \"Clients\");\nclientsPage.verifyLastClient(randomName, randomMail, randomPhone);\ncy.log('Client page!');\ncy.percySnapshot('After-Client');\nclientsPage.deleteLastClient();\nindexPage.logoutUser(\"Login\");",
+              "err": {},
+              "uuid": "07c75bc3-2570-44de-9ce1-84bf03d92676",
+              "parentUUID": "1a0a58b9-0613-45b4-badf-2eb9f8dde93e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2607c05e-5b88-4d06-b1c3-1847a49a60fe",
+            "07c75bc3-2570-44de-9ce1-84bf03d92676"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7344,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "29a5d99b-5ba2-4c39-88cc-fe547d5a0c0f",
+      "title": "",
+      "fullFile": "cypress/integration/page-objects.spec.js",
+      "file": "cypress/integration/page-objects.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4fcad0d5-44cc-470d-bc6a-b9930332b540",
+          "title": "Testsuite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login and logout",
+              "fullTitle": "Testsuite Login and logout",
+              "timedOut": null,
+              "duration": 3223,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//    loginPage.loginUser(\"tester01\", \"GteteqbQQgSr88SwNExUQv2ydb7xuf8c\", \"Tester Hotel Overview\")\ncy.log('at dashboard page!');\ncy.log('logout!');\ncy.percySnapshot('logout');",
+              "err": {},
+              "uuid": "99d48f83-d99c-4414-aff8-76eee86b19fa",
+              "parentUUID": "4fcad0d5-44cc-470d-bc6a-b9930332b540",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Creat client and verify",
+              "fullTitle": "Testsuite Creat client and verify",
+              "timedOut": null,
+              "duration": 4742,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexPage.viewClients(\"Clients\");\ncy.log('Client page!');\ncy.percySnapshot('Before client');\nclientsPage.viewClientNew(\"New Client\");\nclientNewPage.createClient(randomName, randomMail, randomPhone, \"Clients\");\nclientsPage.verifyLastClient(randomName, randomMail, randomPhone);\ncy.log('Client page!');\ncy.percySnapshot('After-Client');\nclientsPage.deleteLastClient();\nindexPage.logoutUser(\"Login\");",
+              "err": {},
+              "uuid": "78850883-75a8-4e04-8cb9-c4dd4ee70a9f",
+              "parentUUID": "4fcad0d5-44cc-470d-bc6a-b9930332b540",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "99d48f83-d99c-4414-aff8-76eee86b19fa",
+            "78850883-75a8-4e04-8cb9-c4dd4ee70a9f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7965,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "f44fd421-b035-457c-bdbc-3549677b7208",
+      "title": "",
+      "fullFile": "cypress/integration/hello-percy.spec.js",
+      "file": "cypress/integration/hello-percy.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d9a9882d-9768-40d9-8c57-f3816b5f165b",
+          "title": "First exempele",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test case 1",
+              "fullTitle": "First exempele Test case 1",
+              "timedOut": null,
+              "duration": 6381,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//visit home page:\ncy.visit('http://localhost:3000/login'); //Den hämtar site title:\ncy.title().should('eq', 'Testers Hotel');\ncy.contains('Login'); //-->> we are at index (login) page!!\ncy.log('At login page!');\ncy.percySnapshot('index-page');\ncy.get(':nth-child(1) > input').type('tester02');\ncy.get(':nth-child(2) > input').type('sppm7qncqmVft5uECkwjLcLdEJGzM3Cw');\ncy.get('.btn').click();\ncy.contains('Welcome');\ncy.wait(3000); //-->> we are at dashboard page!!\ncy.log('At dashboard page!');\ncy.percySnapshot('dashboard-page');",
+              "err": {},
+              "uuid": "8daf89d4-db5b-498e-a3a2-416fbc832112",
+              "parentUUID": "d9a9882d-9768-40d9-8c57-f3816b5f165b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8daf89d4-db5b-498e-a3a2-416fbc832112"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6381,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
